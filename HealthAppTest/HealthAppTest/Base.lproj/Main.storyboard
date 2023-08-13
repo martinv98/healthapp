@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hrk-AS-Oku">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ib7-aW-bBg">
+            <objects>
+                <navigationController id="Hrk-AS-Oku" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="chy-Wd-JBK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.08235294118" green="0.074509803920000006" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" red="0.08235294118" green="0.074509803920000006" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </navigationBarAppearance>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Lak-d7-94e" kind="relationship" relationship="rootViewController" id="phA-ce-ajJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wn1-6X-Mis" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1697" y="-23"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3gR-qN-ZYC">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="Lak-d7-94e" customClass="ViewController" customModule="HealthAppTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YFr-wG-VKa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="PrU-TA-Wqn">
+                                <rect key="frame" x="0.0" y="200" width="414" height="608"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxf-BA-H1i">
+                                        <rect key="frame" x="60" y="40" width="294" height="142.5"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="40"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="rtR-Lp-h8T"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzn-bI-MwF">
+                                        <rect key="frame" x="60" y="232.5" width="294" height="143"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="40"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="dlH-mn-Osk" kind="show" id="H8g-aV-hMu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIL-Fy-ylz">
+                                        <rect key="frame" x="60" y="425.5" width="294" height="142.5"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="40"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="qa4-6Q-SZl" kind="show" id="7lU-fs-VNO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="xcN-dX-AmV"/>
+                                <color key="backgroundColor" red="0.082352941176470587" green="0.074509803921568626" blue="0.1764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <constraints>
+                                    <constraint firstItem="CIL-Fy-ylz" firstAttribute="leading" secondItem="xcN-dX-AmV" secondAttribute="leading" constant="60" id="5mO-t3-fkY"/>
+                                    <constraint firstItem="xcN-dX-AmV" firstAttribute="trailing" secondItem="CIL-Fy-ylz" secondAttribute="trailing" constant="60" id="C5y-Co-iMt"/>
+                                    <constraint firstItem="bzn-bI-MwF" firstAttribute="leading" secondItem="xcN-dX-AmV" secondAttribute="leading" constant="60" id="Gqz-fR-hLp"/>
+                                    <constraint firstItem="fxf-BA-H1i" firstAttribute="leading" secondItem="xcN-dX-AmV" secondAttribute="leading" constant="60" id="Jej-85-b7x"/>
+                                    <constraint firstItem="xcN-dX-AmV" firstAttribute="trailing" secondItem="bzn-bI-MwF" secondAttribute="trailing" constant="60" id="aUl-gH-sym"/>
+                                    <constraint firstItem="xcN-dX-AmV" firstAttribute="trailing" secondItem="fxf-BA-H1i" secondAttribute="trailing" constant="60" id="kAt-1N-FWZ"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="40" left="0.0" bottom="40" right="0.0"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NfQ-tB-Oy5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PrU-TA-Wqn" firstAttribute="leading" secondItem="NfQ-tB-Oy5" secondAttribute="leading" id="CEL-WF-DFM"/>
+                            <constraint firstItem="PrU-TA-Wqn" firstAttribute="bottom" secondItem="YFr-wG-VKa" secondAttribute="bottom" id="W5r-fO-A43"/>
+                            <constraint firstItem="PrU-TA-Wqn" firstAttribute="top" secondItem="NfQ-tB-Oy5" secondAttribute="top" constant="200" id="aw5-N9-BEL"/>
+                            <constraint firstItem="NfQ-tB-Oy5" firstAttribute="trailing" secondItem="PrU-TA-Wqn" secondAttribute="trailing" id="jFG-sE-Avb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7tj-w9-bHT"/>
+                    <connections>
+                        <outlet property="addButton" destination="fxf-BA-H1i" id="exu-hr-K8K"/>
+                        <outlet property="showButton" destination="bzn-bI-MwF" id="jpg-Xg-jk5"/>
+                        <outlet property="synButton" destination="CIL-Fy-ylz" id="Nuf-uR-pQ1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H1E-h4-x2D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-836.23188405797111" y="-23.4375"/>
+        </scene>
+        <!--Show Controller-->
+        <scene sceneID="pjw-VO-crE">
+            <objects>
+                <viewController storyboardIdentifier="ShowController" id="dlH-mn-Osk" customClass="ShowController" customModule="HealthAppTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7ae-Tl-bdF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="leN-FA-xE4" userLabel="Main Stack View">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EzU-HX-TDZ">
+                                        <rect key="frame" x="47" y="30" width="320" height="216.5"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="pickerTextColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </pickerView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" alignment="center" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="hxp-A9-xW6" userLabel="Date">
+                                        <rect key="frame" x="27.5" y="286.5" width="359" height="127"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="unE-aw-H7a" userLabel="Start Date">
+                                                <rect key="frame" x="0.0" y="0.0" width="143" height="127"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Date and Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wf8-qa-VA6">
+                                                        <rect key="frame" x="10" y="10" width="123" height="29"/>
+                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="XEp-lM-ApG">
+                                                        <rect key="frame" x="54.5" y="49" width="34" height="29"/>
+                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="pU1-xV-pdy">
+                                                        <rect key="frame" x="54.5" y="88" width="34" height="29"/>
+                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.4549019608" green="0.32156862749999998" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <edgeInsets key="layoutMargins" top="10" left="10" bottom="10" right="10"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VHP-OG-pR1" userLabel="End Date">
+                                                <rect key="frame" x="223" y="0.0" width="136" height="127"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Date and Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pc-GV-zYj">
+                                                        <rect key="frame" x="10" y="10" width="116" height="29"/>
+                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="jxv-It-Hns">
+                                                        <rect key="frame" x="51" y="49" width="34" height="29"/>
+                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="XR4-oT-zmd">
+                                                        <rect key="frame" x="51" y="88" width="34" height="29"/>
+                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.4549019608" green="0.32156862749999998" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <edgeInsets key="layoutMargins" top="10" left="10" bottom="10" right="10"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.00" borderStyle="roundedRect" placeholder="Value to be shown" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="ElH-F8-UJ2">
+                                        <rect key="frame" x="90" y="453.5" width="234" height="120.5"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPb-Bw-MGY">
+                                        <rect key="frame" x="60" y="614" width="294" height="144"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="40"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Show Value"/>
+                                        <connections>
+                                            <action selector="showValue:" destination="dlH-mn-Osk" eventType="touchUpInside" id="WhS-Mg-6pO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="XsQ-gP-3Q9"/>
+                                <color key="backgroundColor" red="0.050980392156862744" green="0.019607843137254902" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="EzU-HX-TDZ" firstAttribute="height" secondItem="hxp-A9-xW6" secondAttribute="height" multiplier="1.7" id="32C-Lk-rz9"/>
+                                    <constraint firstItem="XsQ-gP-3Q9" firstAttribute="trailing" secondItem="cPb-Bw-MGY" secondAttribute="trailing" constant="60" id="LSm-on-fcr"/>
+                                    <constraint firstItem="EzU-HX-TDZ" firstAttribute="height" secondItem="ElH-F8-UJ2" secondAttribute="height" multiplier="1.8" id="M0g-Wg-qHs"/>
+                                    <constraint firstItem="ElH-F8-UJ2" firstAttribute="leading" secondItem="XsQ-gP-3Q9" secondAttribute="leading" constant="90" id="V7c-vu-v9Z"/>
+                                    <constraint firstItem="cPb-Bw-MGY" firstAttribute="leading" secondItem="XsQ-gP-3Q9" secondAttribute="leading" constant="60" id="axY-wJ-qc5"/>
+                                    <constraint firstItem="XsQ-gP-3Q9" firstAttribute="trailing" secondItem="ElH-F8-UJ2" secondAttribute="trailing" constant="90" id="gVL-Lq-u1S"/>
+                                    <constraint firstItem="EzU-HX-TDZ" firstAttribute="height" secondItem="cPb-Bw-MGY" secondAttribute="height" multiplier="1.5" id="ooz-gX-yio"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="30" left="0.0" bottom="50" right="0.0"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JMw-SK-qSg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="leN-FA-xE4" secondAttribute="bottom" id="3EF-7T-u6j"/>
+                            <constraint firstItem="leN-FA-xE4" firstAttribute="leading" secondItem="JMw-SK-qSg" secondAttribute="leading" id="86Z-jF-u0V"/>
+                            <constraint firstItem="JMw-SK-qSg" firstAttribute="trailing" secondItem="leN-FA-xE4" secondAttribute="trailing" id="V91-RP-lFG"/>
+                            <constraint firstItem="leN-FA-xE4" firstAttribute="top" secondItem="JMw-SK-qSg" secondAttribute="top" id="Wot-J9-he7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4vn-zK-3MI"/>
+                    <connections>
+                        <outlet property="dateEnd" destination="jxv-It-Hns" id="HIl-KY-QzL"/>
+                        <outlet property="dateEndTime" destination="XR4-oT-zmd" id="DA0-9H-54z"/>
+                        <outlet property="dateStart" destination="XEp-lM-ApG" id="gjb-3k-uoP"/>
+                        <outlet property="dateStartTime" destination="pU1-xV-pdy" id="s5m-kI-MYO"/>
+                        <outlet property="elementPicker" destination="EzU-HX-TDZ" id="4mC-80-vSX"/>
+                        <outlet property="endDateStack" destination="VHP-OG-pR1" id="MDy-80-EFU"/>
+                        <outlet property="showButton" destination="cPb-Bw-MGY" id="RN5-WW-Dk5"/>
+                        <outlet property="shownValue" destination="ElH-F8-UJ2" id="OIb-5K-Oym"/>
+                        <outlet property="startDateStack" destination="unE-aw-H7a" id="KHW-gq-SeV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kmR-VN-ya8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45" y="74"/>
+        </scene>
+        <!--Add Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="AddController" id="BYZ-38-t0r" customClass="AddController" customModule="HealthAppTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="XRN-r4-J3V" userLabel="Main Stack View">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="irb-tF-sdu">
+                                        <rect key="frame" x="40" y="30" width="334" height="251"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="pickerTextColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </pickerView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" alignment="center" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="Gio-W7-cKE" userLabel="Date">
+                                        <rect key="frame" x="27.5" y="311" width="359" height="148"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NCK-Q5-wbF" userLabel="Start Date">
+                                                <rect key="frame" x="0.0" y="3" width="143" height="142"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Date and Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWF-ih-sSF">
+                                                        <rect key="frame" x="10" y="10" width="123" height="34"/>
+                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="wQ0-YM-7In">
+                                                        <rect key="frame" x="54.5" y="54" width="34" height="34"/>
+                                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Z7s-Th-lVc">
+                                                        <rect key="frame" x="54.5" y="98" width="34" height="34"/>
+                                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.45490196078431372" green="0.32156862745098036" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                                                <edgeInsets key="layoutMargins" top="10" left="10" bottom="10" right="10"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gkU-94-Hfc" userLabel="End Date">
+                                                <rect key="frame" x="223" y="3" width="136" height="142"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Date and Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sxs-a4-BzF">
+                                                        <rect key="frame" x="10" y="10" width="116" height="34"/>
+                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="es6-Ym-FQ5">
+                                                        <rect key="frame" x="51" y="54" width="34" height="34"/>
+                                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="FTj-6n-EWZ">
+                                                        <rect key="frame" x="51" y="98" width="34" height="34"/>
+                                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.4549019608" green="0.32156862749999998" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <edgeInsets key="layoutMargins" top="10" left="10" bottom="10" right="10"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <textField opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="214" placeholderIntrinsicHeight="125" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" placeholder="Value to be added" textAlignment="center" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="ji9-Pb-cfv">
+                                        <rect key="frame" x="100" y="489" width="214" height="71.5"/>
+                                        <color key="backgroundColor" red="0.73725490196078436" green="0.71372549019607845" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" keyboardAppearance="alert" returnKeyType="done"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="My0-EN-B03">
+                                        <rect key="frame" x="60" y="590.5" width="294" height="167.5"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="40"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Add"/>
+                                        <connections>
+                                            <action selector="addClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cWu-CT-STr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="G84-Q1-NiK"/>
+                                <color key="backgroundColor" red="0.050980392156862744" green="0.019607843137254902" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="My0-EN-B03" firstAttribute="leading" secondItem="G84-Q1-NiK" secondAttribute="leading" priority="999" constant="60" id="5Uv-j0-OkO"/>
+                                    <constraint firstItem="G84-Q1-NiK" firstAttribute="trailing" secondItem="ji9-Pb-cfv" secondAttribute="trailing" priority="999" constant="100" id="B8I-aP-Vb3"/>
+                                    <constraint firstItem="G84-Q1-NiK" firstAttribute="trailing" secondItem="irb-tF-sdu" secondAttribute="trailing" priority="999" constant="40" id="KKx-20-39K"/>
+                                    <constraint firstItem="ji9-Pb-cfv" firstAttribute="leading" secondItem="G84-Q1-NiK" secondAttribute="leading" priority="999" constant="100" id="Mpc-k5-vYH"/>
+                                    <constraint firstItem="irb-tF-sdu" firstAttribute="height" secondItem="Gio-W7-cKE" secondAttribute="height" multiplier="1.7" id="P24-A8-K3I"/>
+                                    <constraint firstItem="irb-tF-sdu" firstAttribute="height" secondItem="ji9-Pb-cfv" secondAttribute="height" multiplier="3.5" id="cpE-mD-6pL"/>
+                                    <constraint firstItem="G84-Q1-NiK" firstAttribute="trailing" secondItem="My0-EN-B03" secondAttribute="trailing" priority="999" constant="60" id="q3f-q9-a9w"/>
+                                    <constraint firstItem="irb-tF-sdu" firstAttribute="height" secondItem="My0-EN-B03" secondAttribute="height" multiplier="1.5" id="uA3-K4-IT4"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="30" left="0.0" bottom="50" right="0.0"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Crv-pE-DL4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XRN-r4-J3V" firstAttribute="top" secondItem="Crv-pE-DL4" secondAttribute="top" id="JsS-9J-cjB"/>
+                            <constraint firstAttribute="bottom" secondItem="XRN-r4-J3V" secondAttribute="bottom" id="Tg7-b1-Cpd"/>
+                            <constraint firstItem="Crv-pE-DL4" firstAttribute="trailing" secondItem="XRN-r4-J3V" secondAttribute="trailing" id="WOW-MP-PW6"/>
+                            <constraint firstItem="XRN-r4-J3V" firstAttribute="leading" secondItem="Crv-pE-DL4" secondAttribute="leading" id="Yup-Ya-Sa0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NHL-PO-l8E"/>
+                    <connections>
+                        <outlet property="addButton" destination="My0-EN-B03" id="mqk-F4-STf"/>
+                        <outlet property="dateEnd1" destination="es6-Ym-FQ5" id="b5f-ex-Ob4"/>
+                        <outlet property="dateEndTime1" destination="FTj-6n-EWZ" id="7qa-Jo-hiG"/>
+                        <outlet property="dateStart1" destination="wQ0-YM-7In" id="VVX-BA-QDg"/>
+                        <outlet property="dateStartTime1" destination="Z7s-Th-lVc" id="KPK-27-uuY"/>
+                        <outlet property="elementPicker" destination="irb-tF-sdu" id="2gy-nL-eJa"/>
+                        <outlet property="endDateStack" destination="gkU-94-Hfc" id="gc1-Rh-QgK"/>
+                        <outlet property="inputText" destination="ji9-Pb-cfv" id="T5o-sW-7EG"/>
+                        <outlet property="startDateStack" destination="NCK-Q5-wbF" id="eQA-CP-cIK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="444.92753623188412" y="-600"/>
+        </scene>
+        <!--Syn Controller-->
+        <scene sceneID="AGv-9g-Mrc">
+            <objects>
+                <viewController storyboardIdentifier="SynController" id="qa4-6Q-SZl" customClass="SynController" customModule="HealthAppTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tkz-f7-FTh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="BFd-Vj-UaJ" userLabel="Main Stack View">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vLb-I8-3pO">
+                                        <rect key="frame" x="47" y="30" width="320" height="242.5"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="pickerTextColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </pickerView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" alignment="center" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="g1f-pv-5OP" userLabel="Date">
+                                        <rect key="frame" x="27.5" y="292.5" width="359" height="142.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gZb-i3-74t" userLabel="Start Date">
+                                                <rect key="frame" x="0.0" y="0.5" width="143" height="142"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Date and Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YP0-BG-A87">
+                                                        <rect key="frame" x="10" y="10" width="123" height="34"/>
+                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="A0M-Xa-YZf">
+                                                        <rect key="frame" x="54.5" y="54" width="34" height="34"/>
+                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Onb-Lc-JFf">
+                                                        <rect key="frame" x="54.5" y="98" width="34" height="34"/>
+                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.4549019608" green="0.32156862749999998" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <edgeInsets key="layoutMargins" top="10" left="10" bottom="10" right="10"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DeK-Sj-A35" userLabel="End Date">
+                                                <rect key="frame" x="223" y="0.5" width="136" height="142"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Date and Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="est-OV-8SI">
+                                                        <rect key="frame" x="10" y="10" width="116" height="34"/>
+                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Ppt-Vc-RMj">
+                                                        <rect key="frame" x="51" y="54" width="34" height="34"/>
+                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="cyR-iW-IcL">
+                                                        <rect key="frame" x="51" y="98" width="34" height="34"/>
+                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.4549019608" green="0.32156862749999998" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <edgeInsets key="layoutMargins" top="10" left="10" bottom="10" right="10"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ilh-pV-aRB">
+                                        <rect key="frame" x="50" y="455" width="314" height="162"/>
+                                        <viewLayoutGuide key="safeArea" id="HdT-ou-LdJ"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13o-Am-kh2">
+                                        <rect key="frame" x="60" y="637" width="294" height="121"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="40"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Synchronize"/>
+                                        <connections>
+                                            <action selector="synchronize:" destination="qa4-6Q-SZl" eventType="touchUpInside" id="c7k-dP-rYz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="A7N-gJ-w0g"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.019607843140000001" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="13o-Am-kh2" firstAttribute="leading" secondItem="A7N-gJ-w0g" secondAttribute="leading" constant="60" id="TOz-V2-N1J"/>
+                                    <constraint firstItem="vLb-I8-3pO" firstAttribute="height" secondItem="Ilh-pV-aRB" secondAttribute="height" multiplier="1.5" id="UVa-Tc-Kvm"/>
+                                    <constraint firstItem="vLb-I8-3pO" firstAttribute="height" secondItem="g1f-pv-5OP" secondAttribute="height" multiplier="1.7" id="kzT-zg-zdp"/>
+                                    <constraint firstItem="vLb-I8-3pO" firstAttribute="height" secondItem="13o-Am-kh2" secondAttribute="height" multiplier="2" id="rZz-Xb-W5V"/>
+                                    <constraint firstItem="A7N-gJ-w0g" firstAttribute="trailing" secondItem="13o-Am-kh2" secondAttribute="trailing" constant="60" id="t3V-Nb-JBr"/>
+                                    <constraint firstItem="A7N-gJ-w0g" firstAttribute="trailing" secondItem="Ilh-pV-aRB" secondAttribute="trailing" constant="50" id="uWO-kL-XcG"/>
+                                    <constraint firstItem="Ilh-pV-aRB" firstAttribute="leading" secondItem="A7N-gJ-w0g" secondAttribute="leading" constant="50" id="xsi-jU-eoK"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="30" left="0.0" bottom="50" right="0.0"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="d7Q-SI-ghr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BFd-Vj-UaJ" firstAttribute="leading" secondItem="d7Q-SI-ghr" secondAttribute="leading" id="A6Z-e7-I4H"/>
+                            <constraint firstAttribute="bottom" secondItem="BFd-Vj-UaJ" secondAttribute="bottom" id="DKq-Ll-3I9"/>
+                            <constraint firstItem="BFd-Vj-UaJ" firstAttribute="trailing" secondItem="d7Q-SI-ghr" secondAttribute="trailing" id="Vlj-cP-TZK"/>
+                            <constraint firstItem="BFd-Vj-UaJ" firstAttribute="top" secondItem="d7Q-SI-ghr" secondAttribute="top" id="Wcr-tU-yjD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Eg3-1u-r6i"/>
+                    <connections>
+                        <outlet property="databasePicker" destination="vLb-I8-3pO" id="URm-wi-ASU"/>
+                        <outlet property="dateEnd" destination="Ppt-Vc-RMj" id="3qV-cG-S3t"/>
+                        <outlet property="dateEndTime" destination="cyR-iW-IcL" id="PGh-gR-eWu"/>
+                        <outlet property="dateStart" destination="A0M-Xa-YZf" id="PAf-D3-eHn"/>
+                        <outlet property="dateStartTime" destination="Onb-Lc-JFf" id="sWo-wP-nAq"/>
+                        <outlet property="endDateStack" destination="DeK-Sj-A35" id="hTT-Oz-R8n"/>
+                        <outlet property="startDateStack" destination="gZb-i3-74t" id="HQR-NW-i3j"/>
+                        <outlet property="synchronizeButton" destination="13o-Am-kh2" id="wuE-lz-NyF"/>
+                        <outlet property="theContainer" destination="Ilh-pV-aRB" id="zsR-dw-O5L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vVM-9n-cH7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="990" y="117"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
